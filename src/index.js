@@ -444,7 +444,7 @@ const counts = document.querySelectorAll(".count")
 
 //-----------------------------------------About Cet cell--------------------------------------------
  const aboutCetSection=document.createElement("div")
- aboutCetSection.style.height="1500px"
+//  aboutCetSection.style.height="1500px"
  aboutCetSection.style.background="url(images/AboutBg.jpg)"
  aboutCetSection.style.backgroundSize ="cover"
  aboutCetSection.style.backgroundPosition="center 0px "
@@ -1108,6 +1108,8 @@ tableHeadData.forEach(function(th){
   table.appendChild(tablebody)
   tableHead.appendChild(tableHeadtr)
   menuContainer.appendChild(table)
+
+
   
 
 //Script In bodybundle
