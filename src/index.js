@@ -130,7 +130,7 @@ const array=[
         const headerli=document.createElement("li")
         headerli.style.flex = array[i].flex
         const aTag=document.createElement("a")
-        aTag.className="text-dark text-decoration-nonessss"
+        aTag.className="text-dark text-decoration-none"
         aTag.href="#"
         console.log(aTag)
         const itag = document.createElement("i")

@@ -26,24 +26,143 @@
 //  })
 
 const gallary = document.createElement("section");
-      gallary.style.height = "500px";
+      // gallary.style.height = "500px";
       gallary.style.background = "#163269";
-    gallary.style.padding = "50px";
-           
+    // gallary.style.padding = "50px";
+    $("main").append(gallary);
+    $(gallary).addClass("p-5");
+
+
+    const galleryText=document.createElement("h4")
+    $(galleryText).html(`Gallery`)
+    galleryText.style.top="-15px";
+    galleryText.className=" text-white px-4";
+    galleryText.style.background="#163269";
 
      const gallaryContainer=document.createElement("div");
-     gallaryContainer.className="container border border-warning h-100 "
+     gallaryContainer.className="container border border-warning h-100 position-relative "
+
+
     //  gallaryContainer.style.background="red"
-    $(gallaryContainer).html(`<div id="carouselExample" class="carousel slide">
+    $(gallaryContainer).html(`<div id="carouselExample" class="carousel slide" >
   <div class="carousel-inner " >
     <div class="carousel-item active ">
-      <img class="h-50" src="images/Garrary1.jpg" class="d-block w-100" alt="...">
+      <div class="row ">
+          <div class="col-12 col-lg-4 ms-auto p-5">
+            <img src="images/Garrary1.jpg" class="d-block w-100" alt="...">
+            </div>
+          <div class="col-12 col-lg-4 p-5 me-auto">
+            <img src="images/Garrary2.jpg" class="d-block w-100" alt="...">
+            </div>
+        </div>
     </div>
     <div class="carousel-item">
-      <img class="h-50" src="images/Garrary2.jpg" class="d-block w-100" alt="...">
+      <div class="row ">
+          <div class="col-12 col-lg-4 ms-auto p-5">
+            <img src="images/Garrary2.jpg" class="d-block w-100" alt="...">
+            </div>
+          <div class="col-12 col-lg-4 p-5 me-auto">
+            <img src="images/Garrary4.jpg" class="d-block w-100" alt="...">
+            </div>
+        </div>
     </div>
     <div class="carousel-item">
-      <img class="h-50" src="images/Garrary3.jpg" class="d-block w-100" alt="...">
+      <div class="row ">
+          <div class="col-12 col-lg-4 ms-auto p-5">
+            <img src="images/Garrary4.jpg" class="d-block w-100" alt="...">
+            </div>
+          <div class="col-12 col-lg-4 p-5 me-auto">
+            <img src="images/Garrary6.jpg" class="d-block w-100" alt="...">
+            </div>
+        </div>
+    </div>
+
+    <div class="carousel-item">
+      <div class="row ">
+          <div class="col-12 col-lg-4 ms-auto p-5">
+            <img src="images/Garrary6.jpg" class="d-block w-100" alt="...">
+            </div>
+          <div class="col-12 col-lg-4 p-5 me-auto">
+            <img src="images/Garrary8.jpg" class="d-block w-100" alt="...">
+            </div>
+        </div>
+    </div>
+
+    <div class="carousel-item">
+      <div class="row ">
+          <div class="col-12 col-lg-4 ms-auto p-5">
+            <img src="images/Garrary8.jpg" class="d-block w-100" alt="...">
+            </div>
+          <div class="col-12 col-lg-4 p-5 me-auto">
+            <img src="images/Garrary10.jpg" class="d-block w-100" alt="...">
+            </div>
+        </div>
+    </div>
+
+    <div class="carousel-item">
+      <div class="row ">
+          <div class="col-12 col-lg-4 ms-auto p-5">
+            <img src="images/Garrary10.jpg" class="d-block w-100" alt="...">
+            </div>
+          <div class="col-12 col-lg-4 p-5 me-auto">
+            <img src="images/Garrary12.jpg" class="d-block w-100" alt="...">
+            </div>
+        </div>
+    </div>
+
+    <div class="carousel-item">
+      <div class="row ">
+          <div class="col-12 col-lg-4 ms-auto p-5">
+            <img src="images/Garrary12.jpg" class="d-block w-100" alt="...">
+            </div>
+          <div class="col-12 col-lg-4 p-5 me-auto">
+            <img src="images/Garrary14.jpg" class="d-block w-100" alt="...">
+            </div>
+        </div>
+    </div>
+
+    <div class="carousel-item">
+      <div class="row ">
+          <div class="col-12 col-lg-4 ms-auto p-5">
+            <img src="images/Garrary16.jpg" class="d-block w-100" alt="...">
+            </div>
+          <div class="col-12 col-lg-4 p-5 me-auto">
+            <img src="images/Garrary18.jpg" class="d-block w-100" alt="...">
+            </div>
+        </div>
+    </div>
+
+    <div class="carousel-item">
+      <div class="row ">
+          <div class="col-12 col-lg-4 ms-auto p-5">
+            <img src="images/Garrary18.jpg" class="d-block w-100" alt="...">
+            </div>
+          <div class="col-12 col-lg-4 p-5 me-auto">
+            <img src="images/Garrary20.jpg" class="d-block w-100" alt="...">
+            </div>
+        </div>
+    </div>
+
+    <div class="carousel-item">
+      <div class="row ">
+          <div class="col-12 col-lg-4 ms-auto p-5">
+            <img src="images/Garrary20.jpg" class="d-block w-100" alt="...">
+            </div>
+          <div class="col-12 col-lg-4 p-5 me-auto">
+            <img src="images/Garrary22.jpg" class="d-block w-100" alt="...">
+            </div>
+        </div>
+    </div>
+
+    <div class="carousel-item">
+      <div class="row ">
+          <div class="col-12 col-lg-4 ms-auto p-5">
+            <img src="images/Garrary22.jpg" class="d-block w-100" alt="...">
+            </div>
+          <div class="col-12 col-lg-4 p-5 me-auto">
+            <img src="images/Garrary24.jpg" class="d-block w-100" alt="...">
+            </div>
+        </div>
     </div>
   </div>
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
@@ -54,13 +173,281 @@ const gallary = document.createElement("section");
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Next</span>
   </button>
+  <div class="LoadMoreBtn  px-4 py-4">
+        <button style="background: #204590;" class="text-white py-2 px-4 rounded-1 border-0">Load More</button>
+    </div>
+
 </div>`);
+    $(gallaryContainer).append(galleryText)
+    $(galleryText).addClass("position-absolute")
      $(gallary).append(gallaryContainer);
-     $("main").append(gallary);
+
+
+     //-----------------------------------------------Scaled Section------------------------------------
+
+     const scaledSection=document.createElement("section")
+    //  scaledSection.style.height="300px"
+    //  scaledSection.style.background="yellow"
+     scaledSection.style.background="url(images/ScalledImages.jpg)"
+     scaledSection.style.backgroundSize ="cover"
+     scaledSection.style.backgroundPosition="center 150px "
+     scaledSection.style.backgroundRepeat="no-repeat"
+     scaledSection.style.backgroundAttachment ="fixed"
+
+
+    $(scaledSection).addClass("p-5")
+
+     
+
+     scaledSection.style.background="overlay"
+    const scaledSectionColor=document.createElement("div")
+    scaledSectionColor.style.background="#ffffffbd"
+    // scaledSectionColor.style.opacity="0.08"
+
+
+
+       
+    const scaledSectionContainerDiv=document.createElement("div")
+     const scaledSectionContainer=document.createElement("container")
+    //  scaledSectionContainer.className="container "
+    //  scaledSectionContainer.style.height="300px"
+     $(scaledSectionContainer).html(`<div id="carouselExampleControls" class="carousel slide " data-bs-ride="carousel">
+  <div class="carousel-inner container">
+    <div class="carousel-item active">
+      <div class="row p-2 px-5">
+          <div class="col-12 col-lg-2 p-1 me-auto ">
+            <img src="images/Garrary1.jpg" class="d-block w-100 " alt="...">
+            </div>
+          <div class="col-12 col-lg-2 p-1 me-auto">
+            <img src="images/Garrary2.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="col-12 col-lg-2 p-1 me-auto">
+            <img src="images/Garrary2.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="col-12 col-lg-2 p-1 me-auto">
+            <img src="images/Garrary2.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="col-12 col-lg-2 p-1 me-auto">
+            <img src="images/Garrary2.jpg" class="d-block w-100" alt="...">
+            </div>
+
+        </div>
+    </div>
+
+    <div class="carousel-item ">
+      <div class="row p-2 px-5">
+          <div class="col-12 col-lg-2 p-1 me-auto ">
+            <img src="images/Garrary1.jpg" class="d-block w-100 " alt="...">
+            </div>
+          <div class="col-12 col-lg-2 p-1 me-auto">
+            <img src="images/Garrary2.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="col-12 col-lg-2 p-1 me-auto">
+            <img src="images/Garrary2.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="col-12 col-lg-2 p-1 me-auto">
+            <img src="images/Garrary2.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="col-12 col-lg-2 p-1 me-auto">
+            <img src="images/Garrary2.jpg" class="d-block w-100" alt="...">
+            </div>
+
+        </div>
+    </div>
+
+    <div class="carousel-item ">
+      <div class="row p-2 px-5">
+          <div class="col-12 col-lg-2 p-1 me-auto ">
+            <img src="images/Garrary1.jpg" class="d-block w-100 " alt="...">
+            </div>
+          <div class="col-12 col-lg-2 p-1 me-auto">
+            <img src="images/Garrary2.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="col-12 col-lg-2 p-1 me-auto">
+            <img src="images/Garrary2.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="col-12 col-lg-2 p-1 me-auto">
+            <img src="images/Garrary2.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="col-12 col-lg-2 p-1 me-auto">
+            <img src="images/Garrary2.jpg" class="d-block w-100" alt="...">
+            </div>
+
+        </div>
+    </div>
+
+       
+
+  </div>
+  <button class="carousel-control-prev " type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon me-auto" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+    <span class="carousel-control-next-icon ms-auto" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>`)
+     
+     $(scaledSectionContainerDiv).append(scaledSectionContainer)
+     $(scaledSectionColor).append(scaledSectionContainerDiv)
+     $(scaledSection).append(scaledSectionColor)
+     $(main).append(scaledSection)
+
+ //----------------------------------------------------------Footer Section----------------------------------------------
+ 
+    const FooterSection=document.createElement("section")
+    FooterSection.style.height="300px"
+    FooterSection.className="py-5"
+
+    FooterSection.style.background="red"
+     const FooterSectionContainer=document.createElement("div")
+     FooterSectionContainer.className="container"
+    //  FooterSectionContainer.style.height="200px"
+     FooterSectionContainer.style.background="blue"
+
+    const FooterSectionContainerRow=document.createElement("div")
+    FooterSectionContainerRow.className="row"
+
+    const FooterSectionContainerRowLeft=document.createElement("div")
+    FooterSectionContainerRowLeft.className="col-12 col-lg-4"
+    $(FooterSectionContainerRowLeft).html(`
+    <h2>Address</h2>
+    <div class="d-flex gap-2 text-white " style="font-size: 18px;"><i class="fa fa-map-marker pt-2" aria-hidden="true"></i>
+
+      <p>8th Floor, New Excelsior Building,<br> A. K. Nayak Marg, Fort,<br> Mumbai- 400 001
+ </p>
+      </div>
+      <div class="d-flex gap-2 text-white " style="font-size: 18px;"> <i class="fa fa-phone pt-1" aria-hidden="true"></i>
+     <p> 07969134401, 07969134402</p></div>
+     <div class="d-flex gap-2 text-white " style="font-size: 18px;"> <i class="fa fa-phone pt-1" aria-hidden="true"></i>
+     <p>Toll free number- 18002090191</p></div>
+     <div class="d-flex gap-2 text-white " style="font-size: 18px;"><i class="fa fa-chrome pt-1" aria-hidden="true"></i>
+
+     <a>www.mahacet.org</a></div>
+
+
+
+    `)
+
+    // const FooterSectionContainerRowMiddle=document.createElement("div")
+    // FooterSectionContainerRowMiddle.className="col-12 col-lg-4"
+    // const FooterSectionContainerRowMiddleRow=document.createElement("section")
+    // const FooterSectionContainerRowMiddleRowDiv=document.createElement("div")
+
+    // FooterSectionContainerRowMiddleRowDiv.className="row"
+    // $(FooterSectionContainerRowMiddleRowDiv).html(`
+    //    byujgujhbbbbb
+    // `)
+
+    // const FooterSectionContainerRowMiddleRowleft=document.createElement("div")
+    // FooterSectionContainerRowMiddle.className="col-12 col-lg-2"
+    // $(FooterSectionContainerRowMiddleRowleft).html(`
+    //    byujgujhbbbbb
+    // `)
+    // const FooterSectionContainerRowMiddleRowRight=document.createElement("div")
+    // FooterSectionContainerRowMiddle.className="col-12 col-lg-2"
+
+    // $(FooterSectionContainerRowMiddleRowRight).html(`
+    //   bjhbjbjnnnkn    `)
+    // $(FooterSectionContainerRowMiddleRowDiv).append(FooterSectionContainerRowMiddleRowleft)
+    // $(FooterSectionContainerRowMiddleRowDiv).append(FooterSectionContainerRowMiddleRowRight)
+    const FooterSectionContainerRowMiddle=document.createElement("div")
+    FooterSectionContainerRowMiddle.className="col-12 col-lg-4"
+    $(FooterSectionContainerRowMiddle).html(`
+    <h2>Visitor Counter</h2>
+    
+    `)
+
+    const FooterSectionContainerRowMiddleSection=document.createElement("section")
+    // FooterSectionContainerRowMiddleSection.className="d-flex"
+    const FooterSectionContainerRowMiddleSectionDiv=document.createElement("div")
+    FooterSectionContainerRowMiddleSectionDiv.className="d-flex"
+    FooterSectionContainerRowMiddleSectionDiv.style.listStyle="none"
+
+
+    const FooterSectionContainerRowMiddleSectionDivLeft=document.createElement("div")
+    FooterSectionContainerRowMiddleSectionDivLeft.className="listremove"
+    $(FooterSectionContainerRowMiddleSectionDivLeft).html(`
+     
+    <div class="pt-2">
+    <ul >
+      <li ><i class="fa fa-caret-right me-3" aria-hidden="true"></i><a href="#">Home</a></li> 
+      <li ><i class="fa fa-caret-right me-3" aria-hidden="true"></i><a href="#">About Us</a></li>  
+      <li ><i class="fa fa-caret-right me-3" aria-hidden="true"></i><a href="#">CET</a></li>  
+      <li ><i class="fa fa-caret-right me-3" aria-hidden="true"></i><a href="#">Admission</a></li>  
+
+    </ul>
+    </div>
+    
+    `);
+    // headerUl.style.listStyle="none"
+    
+
+
+    const FooterSectionContainerRowMiddleSectionDivRight=document.createElement("div")
+    FooterSectionContainerRowMiddleSectionDivRight.className="listremove"
+
+    $(FooterSectionContainerRowMiddleSectionDivRight).html(`
+    <div class="pt-2">
+    <ul >
+      <li ><i class="fa fa-caret-right me-3" aria-hidden="true"></i><a href="#">Search Institude</a></li> 
+      <li ><i class="fa fa-caret-right me-3" aria-hidden="true"></i><a href="#">Cet Statistics</a></li>  
+      <li ><i class="fa fa-caret-right me-3" aria-hidden="true"></i><a href="#">CAP Statistics</a></li>  
+      <li ><i class="fa fa-caret-right me-3" aria-hidden="true"></i><a href="#">Contact</a></li>  
+
+    </ul>
+    </div>
+
+    `)
+
+   $(FooterSectionContainerRowMiddleSectionDiv).append(FooterSectionContainerRowMiddleSectionDivLeft)
+   $(FooterSectionContainerRowMiddleSectionDiv).append(FooterSectionContainerRowMiddleSectionDivRight)
+
+   $(FooterSectionContainerRowMiddle).append(FooterSectionContainerRowMiddleSection)
+   $(FooterSectionContainerRowMiddleSection).append(FooterSectionContainerRowMiddleSectionDiv)
 
 
 
  
+
+    const FooterSectionContainerRowRight=document.createElement("div")
+    FooterSectionContainerRowRight.className="col-12 col-lg-4"
+    $(FooterSectionContainerRowRight).html(`
+    <h2>Visitor Counter</h2>
+    <div >
+      <img src="images/freecounterstart.png" alt="#">
+      <p>Follow Us On Social Media</p>
+
+      <div class="
+      -grid-item ">
+        <a href="https://www.youtube.com/channel/UCxG62HhJYPs84j1hHxTd_hA" alt="#" target="_blank">
+        <span  class="border border-2 rounded  youtube"><i class="fa fa-youtube-play text-white " aria-hidden="true"></i></span></a>
+        <a href="https://www.facebook.com/statecetcell" alt="#" target="_blank">
+        <span class="border border-2 rounded facebook"><i class="fa fa-facebook text-white" aria-hidden="true"></i></span></a>
+      
+        <a href="https://twitter.com/cetcell?s=11" alt="#" target="_blank">
+        <span class="border border-2 rounded xing"><i class="fa fa-xing text-white " aria-hidden="true"></i></span></a>
+      
+        <a href="https://www.instagram.com/statecetcellmumbai/" alt="#" target="_blank">
+        <span class="border border-2 rounded instagram"><i class="fa fa-instagram text-white pt-0" aria-hidden="true"></i></span></a>
+       
+       
+        </div>
+
+      </div>
+    
+    `)
+
+    $(FooterSectionContainerRow).append(FooterSectionContainerRowLeft)
+    $(FooterSectionContainerRow).append(FooterSectionContainerRowMiddle)
+    $(FooterSectionContainerRow).append(FooterSectionContainerRowRight)
+    $(FooterSectionContainer).append(FooterSectionContainerRow)
+    $(FooterSection).append(FooterSectionContainer)
+    $(main).append(FooterSection)
+ 
 </script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+ integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>

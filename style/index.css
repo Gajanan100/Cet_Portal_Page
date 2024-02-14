@@ -40,3 +40,67 @@ only screen and (max-width: 760px),
 		left: -9999px;
 	}
 }  */ 
+.carousel  .LoadMoreBtn button
+{
+     padding-top: -100px;
+	 
+}
+.listremove ul{
+
+	list-style: none;
+}
+
+.listremove li{
+	font-size: 17px;
+	padding: 8px;
+}
+
+.listremove li i{
+
+	color: rgb(218, 139, 139);
+}
+.listremove a
+{
+	text-decoration: none;
+	color: white;
+}
+
+/*--------------------------------------Left Box-------*/
+
+.boxNumbar p{
+	box-sizing: border-box
+}
+.elementor-grid-item a{
+
+	padding-right: 10px !important;
+
+}
+
+.elementor-grid-item .youtube{
+	border: red !important;
+	background-color: red;
+	padding: 4px 6px 4px 6px;
+
+}
+
+
+.elementor-grid-item .facebook{
+	border:hsla(240, 55%, 68%, 0.719) !important;
+	background-color: hsla(240, 55%, 68%, 0.719);
+	padding: 4px 10px 4px 10px;
+
+}
+
+.elementor-grid-item .xing{
+	border: black !important;
+	background-color: black;
+	padding: 4px 8px 4px 8px;
+
+}
+
+.elementor-grid-item .instagram{
+	border: rgba(240, 53, 53, 0.89) !important;
+	background-color: rgba(240, 53, 53, 0.89);
+		padding: 4px 7px 4px 8px;
+	
+}
