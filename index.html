@@ -298,13 +298,13 @@ const gallary = document.createElement("section");
  
     const FooterSection=document.createElement("section")
     FooterSection.style.height="300px"
-    FooterSection.className="py-5"
+    FooterSection.className="py-4 pb-5 "
 
-    FooterSection.style.background="red"
+    FooterSection.style.background="#163269"
      const FooterSectionContainer=document.createElement("div")
-     FooterSectionContainer.className="container"
+     FooterSectionContainer.className="container "
     //  FooterSectionContainer.style.height="200px"
-     FooterSectionContainer.style.background="blue"
+    //  FooterSectionContainer.style.background="blue"
 
     const FooterSectionContainerRow=document.createElement("div")
     FooterSectionContainerRow.className="row"
@@ -312,13 +312,13 @@ const gallary = document.createElement("section");
     const FooterSectionContainerRowLeft=document.createElement("div")
     FooterSectionContainerRowLeft.className="col-12 col-lg-4"
     $(FooterSectionContainerRowLeft).html(`
-    <h2>Address</h2>
+    <div class="iconcolor">
+    <h2 class="pb-2">Address</h2>
     <div class="d-flex gap-2 text-white " style="font-size: 18px;"><i class="fa fa-map-marker pt-2" aria-hidden="true"></i>
 
-      <p>8th Floor, New Excelsior Building,<br> A. K. Nayak Marg, Fort,<br> Mumbai- 400 001
- </p>
+      <p>8th Floor, New Excelsior Building,<br> A. K. Nayak Marg, Fort,<br> Mumbai- 400 001</p>
       </div>
-      <div class="d-flex gap-2 text-white " style="font-size: 18px;"> <i class="fa fa-phone pt-1" aria-hidden="true"></i>
+      <div class="d-flex gap-2 text-white " style="font-size: 18px;"> <i class="fa fa-phone pt-1 " aria-hidden="true"></i>
      <p> 07969134401, 07969134402</p></div>
      <div class="d-flex gap-2 text-white " style="font-size: 18px;"> <i class="fa fa-phone pt-1" aria-hidden="true"></i>
      <p>Toll free number- 18002090191</p></div>
@@ -326,7 +326,7 @@ const gallary = document.createElement("section");
 
      <a>www.mahacet.org</a></div>
 
-
+    </div>
 
     `)
 
@@ -353,9 +353,9 @@ const gallary = document.createElement("section");
     // $(FooterSectionContainerRowMiddleRowDiv).append(FooterSectionContainerRowMiddleRowleft)
     // $(FooterSectionContainerRowMiddleRowDiv).append(FooterSectionContainerRowMiddleRowRight)
     const FooterSectionContainerRowMiddle=document.createElement("div")
-    FooterSectionContainerRowMiddle.className="col-12 col-lg-4"
+    FooterSectionContainerRowMiddle.className="col-12 col-lg-4 iconcolor"
     $(FooterSectionContainerRowMiddle).html(`
-    <h2>Visitor Counter</h2>
+    <h2>Quick Links</h2>
     
     `)
 
@@ -412,12 +412,12 @@ const gallary = document.createElement("section");
  
 
     const FooterSectionContainerRowRight=document.createElement("div")
-    FooterSectionContainerRowRight.className="col-12 col-lg-4"
+    FooterSectionContainerRowRight.className="col-12 col-lg-4 iconcolor"
     $(FooterSectionContainerRowRight).html(`
     <h2>Visitor Counter</h2>
-    <div >
+    <div class="pt-4 footerRight" >
       <img src="images/freecounterstart.png" alt="#">
-      <p>Follow Us On Social Media</p>
+      <h3 class="py-2 bold">Follow Us On Social Media</h3>
 
       <div class="elementor-grid-item ">
         <a  href="https://www.youtube.com/channel/UCxG62HhJYPs84j1hHxTd_hA" alt="#" target="_blank">
@@ -444,6 +444,22 @@ const gallary = document.createElement("section");
     $(FooterSectionContainer).append(FooterSectionContainerRow)
     $(FooterSection).append(FooterSectionContainer)
     $(main).append(FooterSection)
+
+  //--------------------------------------------------FooterBottom----------------------------------
+  const footerBottom=document.createElement("footer")
+  footerBottom.style.height="80px"
+  footerBottom.className="border"
+  footerBottom.style.background="rgb(1, 25, 49)"
+  const footerBottomDiv=document.createElement("div")
+  $(footerBottomDiv).html(`
+  <div class="d-flex justify-content-around g_footer">
+   <div > <p><i class="fa fa-copyright" aria-hidden="true"></i>2024,CET Cell All Rights Reserved</p></div>
+   <div> <p>Powered By:<span style="color:#eec641">Synthesys EduCMS </span></p></div>
+   </div>
+  `)
+
+  $(footerBottom).append(footerBottomDiv)
+  $(main).append(footerBottom)
  
 </script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"

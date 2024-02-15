@@ -45,6 +45,16 @@ only screen and (max-width: 760px),
      padding-top: -100px;
 	 
 }
+
+.iconcolor i
+{
+	color: #eec641;
+}
+.iconcolor h2{
+	color: #eec641;
+	font-size: 25px;
+}
+
 .listremove ul{
 
 	list-style: none;
@@ -57,7 +67,7 @@ only screen and (max-width: 760px),
 
 .listremove li i{
 
-	color: rgb(218, 139, 139);
+	color:#eec641;
 }
 .listremove a
 {
@@ -103,4 +113,21 @@ only screen and (max-width: 760px),
 	background-color: rgba(240, 53, 53, 0.89);
 		padding: 4px 7px 4px 8px;
 	
+}
+
+.footerRight h3{
+	color: #eec641;
+	font-size: x-large;
+	font-weight: 400;
+
+}
+
+/*----------------------------------G-footer-----------------------*/
+
+.g_footer p
+{
+	font-size: 20px;
+	padding-top: 25px;
+	/* background-color: rgb(1, 25, 49); */
+	color: white;
 }
